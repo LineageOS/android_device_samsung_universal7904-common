@@ -16,6 +16,24 @@
       "message": "130?",
       "revId": "d8122f1140029db317d6ae285e130bbf1ae69502",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f73a092c_44ac690b",
+        "filename": "rootdir/etc/init.exynos7904.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 19907
+      },
+      "writtenOn": "2022-07-05T15:28:13Z",
+      "side": 1,
+      "message": "Yeah, stock config\nSamsung devices supports swappiness upto 200\nhttps://github.com/LineageOS/android_kernel_samsung_universal7904/blob/lineage-18.1/kernel/sysctl.c#L136",
+      "parentUuid": "530a1d72_ab16ba33",
+      "revId": "d8122f1140029db317d6ae285e130bbf1ae69502",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
