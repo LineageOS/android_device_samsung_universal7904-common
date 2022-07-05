@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "530a1d72_ab16ba33",
+        "filename": "rootdir/etc/init.exynos7904.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-07-05T14:55:18Z",
+      "side": 1,
+      "message": "130?",
+      "revId": "d8122f1140029db317d6ae285e130bbf1ae69502",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
