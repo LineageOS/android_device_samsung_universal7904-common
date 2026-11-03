@@ -27,6 +27,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 # Must come after TARGET_ARCH, hwc.mk checks it to pick 64-bit DECON addresses
 include hardware/samsung_slsi-linaro/config/BoardConfig7904.mk
 
+# AVB (only needed for signing)
+BOARD_AVB_ENABLE := false
+
 # Camera
 ifeq ($(TARGET_DEVICE),a40)
 $(call soong_config_set,samsungCameraVars,extra_ids,50)
