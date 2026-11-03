@@ -56,6 +56,8 @@ function blob_fixup {
 		else
 			"$PATCHELF" --remove-needed "libgui.so" "$2"
 			add_needed_if_missing libshim_fdsan.so "$2"
+			# S5K5E9: fill the size tables the HAL reads for camera 2 (ultra-wide)
+			"$SIGSCAN" -p "60 0E 83 3D 69 A2 31 39 A1 04 00 54" -P "60 0E 83 3D 69 A2 31 39 B4 04 00 34" -f "$2"
 		fi
 		;;
 	vendor/lib*/libsensorlistener.so)
