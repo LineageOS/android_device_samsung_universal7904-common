@@ -24,6 +24,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
+# Must come before hwc.mk, which reads it into the HWC build
+BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
+
 # Must come after TARGET_ARCH, hwc.mk checks it to pick 64-bit DECON addresses
 include hardware/samsung_slsi-linaro/config/BoardConfig7904.mk
 
@@ -37,7 +40,6 @@ endif
 $(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
 # Display
-BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
 TARGET_SCREEN_DENSITY := 420
 
 # Filesystem
